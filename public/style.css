@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    top: 1em;
+    position: absolute;
+    width: 90vw;
+}
+
+textarea {
+    height: 15em;
+    width: 80ch;
+    resize: none;
+}
+
+a.text {
+    font-weight: 600;
+    display: inline-block;
+    max-width: 20ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+button.icon svg {
+    width: 2em;
+    height: 2em;
+}
+
+.paste {
+    text-align: right;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70%;
+}

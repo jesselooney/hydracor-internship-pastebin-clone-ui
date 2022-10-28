@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+import { API_URL } from './config.js'
+
 const api = axios.create({
-    baseURL: window.location.origin + '/api/v1/'
+    baseURL: API_URL
 });
 
 export async function login(credentials) {
@@ -17,6 +19,7 @@ export async function login(credentials) {
 
 export async function signup(credentials) {
     let response
+    console.warn(credentials)
     try {
         response = await api.post('/users', credentials)
     } catch(_) {

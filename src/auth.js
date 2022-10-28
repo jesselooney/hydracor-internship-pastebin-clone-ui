@@ -8,7 +8,7 @@ export function getTokenOrRedirect() {
         if (!isTokenValid(token)) throw Error
         return token
     } catch (_) {
-        window.location.href = 'http://localhost:8081/login'
+        window.location.href = '/login'
     }
 }
 
